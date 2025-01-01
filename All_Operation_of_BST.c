@@ -83,7 +83,7 @@ struct node* FindMin(struct node *root){
   else if(data < root->data) 
    root->left=DeleteNode(root->left,data);
   else if(data > root->data) 
-   root->left=DeleteNode(root->right,data); 
+   root->right=DeleteNode(root->right,data); 
   else{
     // Case 1:  No child
     if(root->left==NULL && root->right==NULL){
